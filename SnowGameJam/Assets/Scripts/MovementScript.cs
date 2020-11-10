@@ -16,18 +16,12 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if(canControl == true) {
-            float h = Input.GetAxis("Horizontal") * Speed;
-
-            Character.transform.Translate(h * Time.deltaTime, 0, 0);
-		}*/
-
-		if (Input.GetKey("d")) {
-            Character.transform.Translate(Time.deltaTime * -5, 0, 0);
+        if (Input.GetKey("d")) {
+            Character.transform.Translate(Time.deltaTime * -5, 0 , 0);
         }
 
-        if (Input.GetKey("a")) {
+		if (Input.GetKey("a")) {
             Character.transform.Translate(Time.deltaTime * 5, 0, 0);
-        }
+		}
     }
 }

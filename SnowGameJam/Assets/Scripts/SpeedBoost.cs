@@ -6,6 +6,7 @@ public class SpeedBoost : MonoBehaviour
 {
 
     public float slideBoost = 5.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,12 +16,6 @@ public class SpeedBoost : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-
-    void OnTriggerEnter () {
-        if(other.gameObject.tag == "Player"){
-
-		}
-	}
 }
